@@ -7,12 +7,8 @@
 <body>
 <center>
 <h1>Main Screen</h1> 
-<hr> 
-<a href=staff.php>View Database Record</a> | 
-<a href=add_staff.html>Add New Database Record</a> | 
-<a href=edit_staff.html>Edit Database Record </a>| 
-<a href=delete_staff.html>Delete Database Record</a>
-<hr />
+<?php include 'menu.php';?>
+
 <?php
 $host       = "localhost";
 $database   = "staff";

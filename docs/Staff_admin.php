@@ -6,10 +6,8 @@
 <center>
 <h1>Admin Main Screen</h1> 
 <hr> 
-View Database Record | 
-Add New Database Record | 
-Edit Database Record | 
-Delete Database Record
+<?php include 'menu.php';?>
+
 <hr /> 
 <form name="login" action="adminlogin.php" method="post">
 <br><p>Username : <input type="text" name="username" required/></p>

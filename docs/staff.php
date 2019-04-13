@@ -6,19 +6,10 @@
 <body>
 <center>
 <h1>Main Screen</h1> 
-<hr />
-View Database Record | 
-<a href=add_staff.html>Add New Database Record</a> | 
-<a href=edit_staff.html>Edit Database Record</a> | 
-<a href=delete_staff.html>Delete Database Record</a>
-<hr /> 
-<h2>View Database Record</h2>
-<hr /> 
+<?php include 'menu.php';?>
+
+<?php include 'db_connect.php';?>
 <?php
-$server         = "localhost";
-$user           = "root";
-$passwd         = "";
-$database       = "staff";
 $database_table = "staff_table";
 $connect = mysqli_connect("$server","$user","$passwd","$database") or die("could not connect to database");
 $query = "SELECT * FROM $database_table";
